@@ -1,0 +1,31 @@
+module key_expansion(
+input  [127:0] key,
+
+output [127:0] rk0,
+output [127:0] rk1,
+output [127:0] rk2,
+output [127:0] rk3,
+output [127:0] rk4,
+output [127:0] rk5,
+output [127:0] rk6,
+output [127:0] rk7,
+output [127:0] rk8,
+output [127:0] rk9,
+output [127:0] rk10
+
+
+);
+
+assign rk0  = key;
+assign rk1  = key ^ 128'h01010101010101010101010101010101;
+assign rk2  = key ^ 128'h02020202020202020202020202020202;
+assign rk3  = key ^ 128'h03030303030303030303030303030303;
+assign rk4  = key ^ 128'h04040404040404040404040404040404;
+assign rk5  = key ^ 128'h05050505050505050505050505050505;
+assign rk6  = key ^ 128'h06060606060606060606060606060606;
+assign rk7  = key ^ 128'h07070707070707070707070707070707;
+assign rk8  = key ^ 128'h08080808080808080808080808080808;
+assign rk9  = key ^ 128'h09090909090909090909090909090909;
+assign rk10 = key ^ 128'h0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A;
+
+endmodule
