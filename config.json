@@ -1,0 +1,24 @@
+{
+    "DESIGN_NAME": "aes_top",
+
+    "VERILOG_FILES": [
+        "dir::src/aes_top.v",
+        "dir::src/aes_round.v",
+        "dir::src/aes_controller.v",
+        "dir::src/addroundkey.v",
+        "dir::src/key_expansion.v",
+        "dir::src/mixcolumns.v",
+        "dir::src/shiftrows.v",
+        "dir::src/subbytes.v",
+        "dir::src/sbox.v"
+    ],
+
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10,
+
+    "FP_PDN_MULTILAYER": true,
+
+    "DIE_AREA": [0, 0, 1000, 1000],
+    "CORE_AREA": [50, 50, 950, 950]
+}
+
