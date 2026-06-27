@@ -122,21 +122,7 @@ These operations are repeated over multiple rounds to provide strong cryptograph
 
 ---
 
-# Repository Structure
 
-```text
-.
-├── src/
-├── config.json
-├── reports/
-├── logs/
-├── runs/
-├── screenshots/
-├── docs/
-└── README.md
-```
-
----
 
 # Learning Outcomes
 
